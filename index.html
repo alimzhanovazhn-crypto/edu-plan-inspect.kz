@@ -83,7 +83,7 @@
                             <img :src="currentRole === 'teacher' ? 'https://placehold.co/100x100/6366f1/ffffff?text=АК' : 'https://placehold.co/100x100/0ea5e9/ffffff?text=МО'" alt="Avatar" class="w-full h-full object-cover">
                         </div>
                         <div class="hidden md:block text-left">
-                            <p class="text-xs font-bold text-slate-800" x-text="currentRole === 'teacher' ? 'Айгерим Каримова' : 'Елена Васильевна'"></p>
+                            <p class="text-xs font-bold text-slate-800" x-text="currentRole === 'teacher' ? 'Алимжанова Жанар Отануркызы' : 'Акбергенова Майраш'"></p>
                             <p class="text-[10px] text-slate-500" x-text="currentRole === 'teacher' ? 'Учитель математики' : 'Руководитель МО / Завуч'"></p>
                         </div>
                     </div>
@@ -623,7 +623,7 @@
                         term: '1 четверть',
                         language: 'Русский',
                         teacher: 'Акбергенова Майраш',
-                        school: 'Школа-лицей №15',
+                        school: 'Койшыбекская средняя школа',
                         hoursTotal: 24,
                         status: 'review',
                         comments: [
@@ -641,7 +641,7 @@
                         grade: '9 класс',
                         term: '1 четверть',
                         language: 'Русский',
-                        teacher: 'Максим Игоревич',
+                        teacher: 'Есенгулова Нургуль',
                         school: 'Школа-лицей №15',
                         hoursTotal: 18,
                         status: 'approved',
@@ -658,7 +658,7 @@
                         term: '1 четверть',
                         language: 'Казахский',
                         teacher: 'Торгеев Айдос ',
-                        school: 'Школа-лицей №15',
+                        school: 'Койшыбекская средняя школа',
                         hoursTotal: 16,
                         status: 'rejected',
                         comments: [
@@ -677,7 +677,7 @@
                     term: '1 четверть',
                     language: 'Русский',
                     teacher: 'Акбергенова Майраш',
-                    school: 'Школа-лицей №15',
+                    school: 'Койшыбекская средняя школа',
                     hoursTotal: 0,
                     status: 'draft',
                     comments: [],
@@ -712,7 +712,7 @@
                         term: '1 четверть',
                         language: 'Русский',
                         teacher: 'Акбергенова Майраш',
-                        school: 'Школа-лицей №15',
+                        school: 'Койшыбекская средняя школа',
                         hoursTotal: 20,
                         status: 'draft',
                         comments: [],
@@ -853,7 +853,7 @@
                         }
                         this.viewingPlan.status = 'rejected';
                         this.viewingPlan.comments.push({
-                            author: this.currentRole === 'admin' ? 'Елена Васильевна (Завуч)' : 'Руководитель МО',
+                            author: this.currentRole === 'admin' ? 'Алимжанова Жанар Отануркызы (Завуч)' : 'Руководитель МО',
                             text: this.newCommentText,
                             date: new Date().toLocaleDateString()
                         });
